@@ -13,6 +13,7 @@ class FormHeaderWidget extends StatelessWidget {
     this.textAlign,
   }) : super(key: key);
 
+  //Variables -- Declared in Constructor
   final Color? imageColor;
   final double imageHeight;
   final double? heightBetween;

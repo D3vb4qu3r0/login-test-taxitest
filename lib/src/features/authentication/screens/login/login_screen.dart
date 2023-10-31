@@ -5,7 +5,6 @@ import 'package:miapp/src/constants/sizes.dart';
 import 'package:miapp/src/constants/text_string.dart';
 import 'package:miapp/src/features/authentication/screens/login/widgets/login_footer_widget.dart';
 import 'widgets/login_form_widget.dart';
-import 'widgets/login_header_widget.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -18,9 +17,9 @@ class LoginScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.all(tDefaultSize),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 /* -- Section-1 -- */
                 FormHeaderWidget(
                     image: tWelcomeScreenImage,

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:miapp/src/features/authentication/screens/login/login_screen.dart';
 
 import '../../../../../constants/image_strings.dart';
 import '../../../../../constants/text_string.dart';
@@ -25,7 +28,7 @@ class SignUpFooterWidget extends StatelessWidget {
           ),
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () => Get.off(() => const LoginScreen()),
           child: Text.rich(TextSpan(children: [
             TextSpan(
               text: tAlreadyHaveAnAccount,
